@@ -23,7 +23,7 @@ pipeline {
             agent {
               docker {
               label 'linux&&docker&&aws'
-              image 'alpine:latest'
+              image 'rikorose/gcc-cmake'
               }
           } 
           options {
