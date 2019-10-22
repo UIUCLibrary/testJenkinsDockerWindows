@@ -7,7 +7,7 @@ pipeline {
             agent {
               docker {
               label 'Windows&&Docker&&aws'
-              image 'microsoft/windowsservercore:ltsc2016'
+              image 'mcr.microsoft.com/windows/servercore:ltsc2019'
               }
           } 
           options {
