@@ -1,8 +1,8 @@
 pipeline {
   agent {
         docker {
-        label 'Windows&&Docker&&!aws'
-        image 'mcr.microsoft.com/powershell:preview'
+        label 'Windows&&Docker&&aws'
+        image 'mcr.microsoft.com/powershell'
         }
     }
   stages {
@@ -14,7 +14,8 @@ pipeline {
 
       steps {
         echo "Hello world using a Jenkins Command"
-        powershell 'Write-Host "Hello World, from Powershell"'   
+        powershell 'Write-Host "Hello World, from Powershell"'
+   
       }
     }
   }
