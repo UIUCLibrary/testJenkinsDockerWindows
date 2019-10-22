@@ -15,7 +15,7 @@ pipeline {
           }
 
           steps {
-            powershell 'Write-Host "Hello World, from Powershell"'
+            powershell 'powershell "cmd /c echo test inside"'
 
           }
         }
