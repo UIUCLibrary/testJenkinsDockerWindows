@@ -15,7 +15,7 @@ pipeline {
           }
 
           steps {
-            cmake arguments: '--version', installation: 'InSearchPath'
+            cmake 'InSearchPath'
 
           }
         }
