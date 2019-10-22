@@ -15,7 +15,7 @@ pipeline {
           }
 
           steps {
-            powershell 'powershell "cmd /c echo test inside"'
+            cmake arguments: '--version', installation: 'InSearchPath'
 
           }
         }
