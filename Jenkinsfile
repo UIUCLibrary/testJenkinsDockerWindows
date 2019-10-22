@@ -15,7 +15,6 @@ pipeline {
           }
 
           steps {
-    //        echo "Hello world using a Jenkins Command"
             powershell 'Write-Host "Hello World, from Powershell"'
 
           }
@@ -32,7 +31,6 @@ pipeline {
           }
 
           steps {
-    //        echo "Hello world using a Jenkins Command"
             sh 'echo "hello world"'
 
           }
