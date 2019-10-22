@@ -23,7 +23,7 @@ pipeline {
         stage('Hello world on Linux') {
             agent {
               docker {
-              label 'Linux&&Docker&&aws'
+              label 'linux&&Docker&&aws'
               image 'alpine:latest'
               }
           } 
