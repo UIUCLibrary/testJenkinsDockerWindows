@@ -7,7 +7,7 @@ pipeline {
             agent {
               docker {
               label 'Windows&&Docker&&aws'
-              image 'mcr.microsoft.com/windows/servercore:ltsc2019'
+              image 'tyko/master'
               }
           } 
           options {
