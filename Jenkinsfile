@@ -5,10 +5,11 @@ pipeline {
       parallel {
         stage('Hello world on Windows') {
             agent {
-              docker {
               label 'Windows&&Docker&&aws'
-              image 'python:3.7'
-              }
+              // docker {
+              // label 'Windows&&Docker&&aws'
+              // image 'python:3.7'
+              // }
           } 
           options {
             timeout(2) // in case the pipeline hangs
