@@ -22,11 +22,11 @@ pipeline {
         }
         stage('Hello world on Linux') {
             agent {
-              label 'linux&&docker&&aws'
-              // docker {
               // label 'linux&&docker&&aws'
-              // image 'ubuntu:latest'
-              // }
+              docker {
+               label 'linux&&docker&&aws'
+               image 'ubuntu:latest'
+               }
           } 
           options {
             timeout(2) // in case the pipeline hangs
