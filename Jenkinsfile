@@ -29,7 +29,7 @@ pipeline {
         stage('Hello world on Linux') {
            agent {
             docker {
-              image 'apline'
+              image 'alpine'
               label 'Windows&&Docker&&aws'
             }
           }
