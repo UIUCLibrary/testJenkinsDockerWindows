@@ -7,7 +7,7 @@ pipeline {
             agent {
               docker {
               label 'Windows&&Docker&&aws'
-              image 'python:latest'
+              image 'python:3.7'
               }
           } 
           options {
