@@ -7,7 +7,7 @@ pipeline {
             agent {
               docker {
               label 'Windows&&Docker&&aws'
-              image 'mcr.microsoft.com/windows/servercore:ltsc2019'
+              image 'python:latest'
               }
           } 
           options {
@@ -15,7 +15,7 @@ pipeline {
           }
 
           steps {
-            powershell 'powershell "cmd /c echo test inside"'
+            bat "python --version"
 
           }
         }
