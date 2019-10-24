@@ -11,7 +11,7 @@ pipeline {
               }
           } 
           options {
-            timeout(1) // in case the pipeline hangs
+            timeout(2) // in case the pipeline hangs
           }
 
           steps {
@@ -27,7 +27,7 @@ pipeline {
               }
           } 
           options {
-            timeout(1) // in case the pipeline hangs
+            timeout(2) // in case the pipeline hangs
           }
 
           steps {
