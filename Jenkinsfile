@@ -30,7 +30,7 @@ pipeline {
            agent {
             docker {
               image 'alpine'
-              label 'Windows&&Docker&&aws'
+              label 'linux&&Docker&&aws'
             }
           }
 
